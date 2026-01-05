@@ -3,7 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | FlyHR</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Privacy Policy & Data Transparency | FlyHR Smart Solutions</title>
+    <meta name="title" content="Privacy Policy & Data Transparency | FlyHR Smart Solutions">
+    <meta name="description" content="Discover how FlyHR protects employee data. Learn about our AES-256 encryption, biometric security, and transparent data lifecycle for enterprise HR management.">
+    <meta name="keywords" content="HR privacy policy, employee data protection, FlyHR security, biometric attendance privacy, GDPR compliant HR software">
+    <meta name="author" content="FlyHR Smart Solutions">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://flyhr.net/Images/fav1.png">
+    <link rel="apple-touch-icon" href="https://flyhr.net/Images/fav1.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://flyhr.io/privacy">
+    <meta property="og:title" content="Privacy Policy & Data Transparency | FlyHR">
+    <meta property="og:description" content="Enterprise-grade data security. Visualizing how FlyHR handles employee data with absolute transparency and security.">
+    <meta property="og:image" content="https://flyhr.net/Images/fav1.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://flyhr.io/privacy">
+    <meta property="twitter:title" content="Privacy Policy & Data Transparency | FlyHR">
+    <meta property="twitter:description" content="Enterprise-grade data security. Visualizing how FlyHR handles employee data with absolute transparency and security.">
+    <meta property="twitter:image" content="https://flyhr.net/Images/fav1.png">
+
+    <!-- JSON-LD Structured Data (SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "FlyHR Privacy Policy",
+      "description": "Information on how FlyHR collects, uses, and protects personal and enterprise data.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "FlyHR Smart Solutions",
+        "logo": "https://flyhr.net/Images/fav1.png"
+      }
+    }
+    </script>
+
+    <!-- Performance: Preconnect to Font Servers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <style>
         :root {
             --primary: #4f46e5;
@@ -27,6 +73,8 @@
             color: var(--text-main);
             background-color: var(--bg-page);
             scroll-behavior: smooth;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
         }
 
         header {
@@ -50,17 +98,16 @@
             font-size: 1.5rem;
             color: var(--dark);
             letter-spacing: -0.05em;
+            text-decoration: none;
         }
 
-        .logo-icon {
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            color: white;
-            padding: 8px;
-            border-radius: 10px;
-            display: flex;
+        .logo-img {
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
+            border-radius: 8px;
         }
 
-        /* Hero Visual Section */
         .hero-visual {
             background: linear-gradient(to bottom, #ffffff, #f1f5f9);
             padding: 4rem 2rem;
@@ -104,7 +151,6 @@
             font-weight: 700;
         }
 
-        /* Main Layout */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -141,7 +187,6 @@
         .side-nav li a:hover { color: var(--primary); background: var(--bg-page); }
         .side-nav li a.active { background: var(--primary-light); color: var(--primary); font-weight: 600; }
 
-        /* Infographic Sections */
         .data-lifecycle {
             display: flex;
             justify-content: space-between;
@@ -151,10 +196,13 @@
             border-radius: 20px;
             border: 1px solid var(--border);
             position: relative;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
 
         .step {
             flex: 1;
+            min-width: 120px;
             text-align: center;
             position: relative;
             z-index: 1;
@@ -174,15 +222,16 @@
 
         .step-label { font-size: 0.8rem; font-weight: 700; color: var(--dark); }
 
-        /* Article Sections */
         article section {
             background: var(--white);
-            padding: 3.5rem;
+            padding: clamp(1.5rem, 5vw, 3.5rem);
             border-radius: 24px;
             box-shadow: var(--shadow);
             margin-bottom: 3rem;
             border: 1px solid var(--border);
         }
+
+        h1 { font-size: clamp(2rem, 5vw, 2.5rem); color: var(--dark); letter-spacing: -0.04em; margin-bottom: 1rem;}
 
         h2 {
             font-size: 1.75rem;
@@ -200,6 +249,7 @@
             border-radius: 12px;
             display: flex;
             color: var(--primary);
+            flex-shrink: 0;
         }
 
         .highlight-box {
@@ -232,7 +282,7 @@
         }
 
         @media (max-width: 1000px) {
-            .container { grid-template-columns: 1fr; }
+            .container { grid-template-columns: 1fr; padding-top: 2rem; }
             aside { display: none; }
         }
     </style>
@@ -240,143 +290,148 @@
 <body>
 
 <header>
-    <div class="logo">
-        <div class="logo-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-        </div>
+    <a href="/" class="logo" title="FlyHR Home">
+        <img src="https://flyhr.net/Images/fav1.png" alt="FlyHR Logo" class="logo-img">
         FlyHR
-    </div>
+    </a>
     <div style="font-size: 0.8rem; font-weight: 700; color: var(--accent); background: #ecfdf5; padding: 6px 14px; border-radius: 30px; border: 1px solid #d1fae5;">
         PRIVACY CERTIFIED
     </div>
 </header>
 
-<div class="hero-visual">
-    <div class="canvas-container">
-        <canvas id="trustGauge"></canvas>
-        <div class="gauge-label">
-            <span class="gauge-value" id="scoreVal">0</span>
-            <span class="gauge-text">Compliance</span>
+<main>
+    <div class="hero-visual">
+        <div class="canvas-container">
+            <canvas id="trustGauge" aria-label="Privacy Compliance Score Gauge"></canvas>
+            <div class="gauge-label">
+                <span class="gauge-value" id="scoreVal">0</span>
+                <span class="gauge-text">Compliance</span>
+            </div>
         </div>
+        <h1>Data Transparency Dashboard</h1>
+        <p class="subtitle" style="max-width: 600px; margin: 0 auto; color: var(--text-muted); font-size: 1.1rem;">Visualizing how FlyHR handles enterprise-grade employee data with absolute security and GDPR compliance.</p>
     </div>
-    <h1>Data Transparency Dashboard</h1>
-    <p class="subtitle" style="max-width: 600px; margin: 0 auto;">Visualizing how FlyHR handles enterprise-grade employee data with absolute security.</p>
-</div>
 
-<div class="container">
-    <aside>
-        <ul class="side-nav">
-            <li><a href="#overview" class="active">Overview</a></li>
-            <li><a href="#tracking">Smart Geofencing</a></li>
-            <li><a href="#biometrics">Biometric Security</a></li>
-            <li><a href="#lifecycle">Data Lifecycle</a></li>
-            <li><a href="#permissions">System Access</a></li>
-        </ul>
-    </aside>
+    <div class="container">
+        <aside>
+            <nav aria-label="Privacy sections">
+                <ul class="side-nav">
+                    <li><a href="#overview" class="active">Overview</a></li>
+                    <li><a href="#tracking">Smart Geofencing</a></li>
+                    <li><a href="#biometrics">Biometric Security</a></li>
+                    <li><a href="#lifecycle">Data Lifecycle</a></li>
+                    <li><a href="#permissions">System Access</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-    <article>
-        <section id="overview">
-            <h2>
-                <div class="icon-box">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        <article>
+            <section id="overview">
+                <h2>
+                    <div class="icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    The FlyHR Privacy Engine
+                </h2>
+                <p>Our "Smart Management" philosophy starts with privacy. FlyHR is designed to facilitate high-performance HR operations while ensuring that individual employee rights are never compromised.</p>
+                <div class="highlight-box">
+                    <strong>Advanced Data Encryption</strong>
+                    <p>All employee records, payroll identifiers, and attendance logs are encrypted using <strong>AES-256 standards</strong> both at rest and in transit. Your data is invisible to unauthorized parties.</p>
                 </div>
-                The FlyHR Privacy Engine
-            </h2>
-            <p>Our "Smart Management" philosophy starts with privacy. FlyHR is designed to facilitate high-performance HR operations while ensuring that individual employee rights are never compromised.</p>
-            <div class="highlight-box">
-                <strong>Data Encryption</strong>
-                All employee records, payroll identifiers, and attendance logs are encrypted using AES-256 standards both at rest and in transit.
-            </div>
-        </section>
+            </section>
 
-        <section id="tracking">
-            <h2>
-                <div class="icon-box">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
-                </div>
-                Intelligent Attendance
-            </h2>
-            <p>We use <strong>ACCESS_FINE_LOCATION</strong> and <strong>ACCESS_BACKGROUND_LOCATION</strong> to enable geofenced check-ins.</p>
-            <p>Unlike standard trackers, FlyHR creates a virtual "Work Bubble." Location data is only recorded when you cross the boundary of an authorized job site, protecting your privacy during commute or personal time.</p>
-        </section>
+            <section id="tracking">
+                <h2>
+                    <div class="icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+                    </div>
+                    Intelligent Attendance
+                </h2>
+                <p>We utilize <code>ACCESS_FINE_LOCATION</code> and <code>ACCESS_BACKGROUND_LOCATION</code> to enable geofenced check-ins for mobile workforces.</p>
+                <p>Unlike standard trackers, FlyHR creates a virtual <strong>"Work Bubble."</strong> Location data is only recorded when you cross the boundary of an authorized job site, protecting your privacy during commute or personal time.</p>
+            </section>
 
-        <section id="lifecycle">
-            <h2>Data Journey Infographic</h2>
-            <p>Transparency means showing you where your data goes.</p>
-            <div class="data-lifecycle">
-                <div class="step">
-                    <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
-                    <span class="step-label">Collection</span>
+            <section id="lifecycle">
+                <h2>Data Journey Infographic</h2>
+                <p>Transparency means showing you exactly where your data goes, from collection to deletion.</p>
+                <div class="data-lifecycle">
+                    <div class="step">
+                        <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
+                        <span class="step-label">Collection</span>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+                        <span class="step-label">Encryption</span>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg></div>
+                        <span class="step-label">Vault Storage</span>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg></div>
+                        <span class="step-label">Payroll Execution</span>
+                    </div>
                 </div>
-                <div class="step">
-                    <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
-                    <span class="step-label">Encryption</span>
-                </div>
-                <div class="step">
-                    <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg></div>
-                    <span class="step-label">Vault Storage</span>
-                </div>
-                <div class="step">
-                    <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg></div>
-                    <span class="step-label">Payroll Execution</span>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="biometrics">
-            <h2>
-                <div class="icon-box">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
-                </div>
-                Secure Media & Biometrics
-            </h2>
-            <p>When you use the <strong>CAMERA</strong> for biometric attendance or expense scanning:</p>
-            <ul>
-                <li>Images are processed locally for verification.</li>
-                <li>Raw biometric data is never sent to our servers; only encrypted hashes are stored.</li>
-                <li>Receipt photos in <strong>STORAGE</strong> are strictly siloed from your personal gallery.</li>
-            </ul>
-        </section>
+            <section id="biometrics">
+                <h2>
+                    <div class="icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                    </div>
+                    Secure Media & Biometrics
+                </h2>
+                <p>When you use the <strong>CAMERA</strong> for biometric attendance or expense scanning:</p>
+                <ul style="margin-left: 1.5rem; margin-top: 1rem;">
+                    <li>Images are processed locally for instant verification.</li>
+                    <li>Raw biometric data is never sent to our servers; only encrypted hashes are stored.</li>
+                    <li>Receipt photos in <strong>STORAGE</strong> are strictly siloed from your personal gallery.</li>
+                </ul>
+            </section>
 
-        <section id="permissions">
-            <h2>Permissions Matrix</h2>
-            <div class="permission-grid">
-                <div class="perm-card">
-                    <strong style="color: var(--primary); font-size: 0.75rem; display: block; margin-bottom: 8px;">NETWORK</strong>
-                    <strong>ACCESS_NETWORK_STATE</strong>
-                    <p style="font-size: 0.8rem; margin-top: 8px;">Ensures offline attendance logs sync only when a secure connection is established.</p>
+            <section id="permissions">
+                <h2>Permissions Matrix</h2>
+                <div class="permission-grid">
+                    <div class="perm-card">
+                        <strong style="color: var(--primary); font-size: 0.75rem; display: block; margin-bottom: 8px;">NETWORK</strong>
+                        <strong>ACCESS_NETWORK_STATE</strong>
+                        <p style="font-size: 0.8rem; margin-top: 8px;">Ensures offline attendance logs sync only when a secure connection is established.</p>
+                    </div>
+                    <div class="perm-card">
+                        <strong style="color: var(--primary); font-size: 0.75rem; display: block; margin-bottom: 8px;">IDENTIFICATION</strong>
+                        <strong>READ_PHONE_STATE</strong>
+                        <p style="font-size: 0.8rem; margin-top: 8px;">Used for unique device binding to prevent account impersonation and unauthorized logins.</p>
+                    </div>
+                    <div class="perm-card">
+                        <strong style="color: var(--primary); font-size: 0.75rem; display: block; margin-bottom: 8px;">ALERTS</strong>
+                        <strong>POST_NOTIFICATIONS</strong>
+                        <p style="font-size: 0.8rem; margin-top: 8px;">Direct alerts for payroll approval, shift changes, and critical HR updates.</p>
+                    </div>
                 </div>
-                <div class="perm-card">
-                    <strong style="color: var(--primary); font-size: 0.75rem; display: block; margin-bottom: 8px;">IDENTIFICATION</strong>
-                    <strong>READ_PHONE_STATE</strong>
-                    <p style="font-size: 0.8rem; margin-top: 8px;">Used for unique device binding to prevent account impersonation.</p>
-                </div>
-                <div class="perm-card">
-                    <strong style="color: var(--primary); font-size: 0.75rem; display: block; margin-bottom: 8px;">ALERTS</strong>
-                    <strong>POST_NOTIFICATIONS</strong>
-                    <p style="font-size: 0.8rem; margin-top: 8px;">Direct alerts for payroll approval, shifts, and HR updates.</p>
-                </div>
-            </div>
-        </section>
-    </article>
-</div>
+            </section>
+        </article>
+    </div>
+</main>
 
 <footer>
-    <div class="logo" style="color: white; justify-content: center; margin-bottom: 1.5rem;">FlyHR</div>
+    <div class="logo" style="color: white; justify-content: center; margin-bottom: 1.5rem; text-decoration: none;">
+        <img src="https://flyhr.net/Images/fav1.png" alt="FlyHR Logo" class="logo-img" style="filter: brightness(0) invert(1);">
+        FlyHR
+    </div>
     <p>&copy; 2026 FlyHR Smart Solutions. All rights reserved.</p>
-    <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 20px;">
-        <span style="font-size: 0.7rem; color: #64748b;">GDPR COMPLIANT</span>
-        <span style="font-size: 0.7rem; color: #64748b;">SOC2 READY</span>
-        <span style="font-size: 0.7rem; color: #64748b;">ISO 27001</span>
+    <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <span style="font-size: 0.7rem; color: #64748b; font-weight: 600;">GDPR COMPLIANT</span>
+        <span style="font-size: 0.7rem; color: #64748b; font-weight: 600;">SOC2 READY</span>
+        <span style="font-size: 0.7rem; color: #64748b; font-weight: 600;">ISO 27001</span>
     </div>
 </footer>
 
 <script>
-    // Canvas Gauge Implementation
+    // Canvas Gauge Implementation - Optimized for performance
     const canvas = document.getElementById('trustGauge');
     const ctx = canvas.getContext('2d');
     const scoreVal = document.getElementById('scoreVal');
-    let targetScore = 98;
+    const targetScore = 98;
     let currentScore = 0;
 
     function drawGauge(score) {
@@ -417,24 +472,27 @@
         }
     }
 
-    // Initialize
-    canvas.width = 240;
-    canvas.height = 240;
-    
-    // Start animation on load
-    window.onload = () => {
-        animateScore();
-    };
+    // Initialize Canvas Dimensions
+    function initCanvas() {
+        const dpr = window.devicePixelRatio || 1;
+        canvas.width = 240 * dpr;
+        canvas.height = 240 * dpr;
+        canvas.style.width = '240px';
+        canvas.style.height = '240px';
+        ctx.scale(dpr, dpr);
+        drawGauge(0);
+    }
 
-    // Scroll Spy for Navigation
-    window.addEventListener('scroll', () => {
+    // Scroll Spy for Navigation with Debounce
+    let scrollTimeout;
+    function updateScrollSpy() {
         let current = "";
         const sections = document.querySelectorAll("section");
         const navLi = document.querySelectorAll(".side-nav li a");
 
         sections.forEach((section) => {
             const sectionTop = section.offsetTop;
-            if (pageYOffset >= sectionTop - 200) {
+            if (window.pageYOffset >= sectionTop - 250) {
                 current = section.getAttribute("id");
             }
         });
@@ -445,6 +503,16 @@
                 li.classList.add("active");
             }
         });
+    }
+
+    window.addEventListener('scroll', () => {
+        if (scrollTimeout) clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(updateScrollSpy, 10);
+    });
+
+    window.addEventListener('load', () => {
+        initCanvas();
+        animateScore();
     });
 </script>
 </body>
